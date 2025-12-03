@@ -6,6 +6,8 @@ app = Flask(__name__)
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), 'data')
 
+THIS BREAKS THE CODE
+
 @app.route('/')
 def index():
     entries = []
