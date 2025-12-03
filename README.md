@@ -1,5 +1,7 @@
 # Flask Photo Directory App
 
+This serves as a demo project for some git collaboration practice.
+
 This Flask application serves an HTML page that lists entries from subdirectories. Each subdirectory should contain:
 - A photo file (e.g., .jpg, .png)
 - A JSON file with `firstname` and `lastname`
