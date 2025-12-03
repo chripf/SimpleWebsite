@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Directory</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .entry { display: flex; align-items: center; margin-bottom: 20px; }
+        .entry img { width: 100px; height: 100px; object-fit: cover; margin-right: 20px; border-radius: 8px; border: 1px solid #ccc; }
+        .entry .name { font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <h1>Photo Directory</h1>
+    {% for entry in entries %}
+    <div class="entry">
+        <img src="{{ entry.photo_url }}" alt="Photo of {{ entry.firstname }} {{ entry.lastname }}">
+        <div class="name">{{ entry.firstname }} {{ entry.lastname }}</div>
+    </div>
+    {% else %}
+    <p>No entries found.</p>
+    {% endfor %}
+</body>
+</html>
